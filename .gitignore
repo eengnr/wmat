@@ -1,0 +1,5 @@
+typings
+tools/*.png
+tools/*.svg
+tools/*.raw
+__pycache__

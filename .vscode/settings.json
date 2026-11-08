@@ -1,0 +1,15 @@
+{
+    "micropico.openOnStart": true,
+    "python.analysis.typeshedPaths": [
+        "~/.micropico-stubs/included"
+    ],
+    "python.analysis.extraPaths": [
+        "~/.micropico-stubs/included"
+    ],
+    "micropico.syncFolder": "src",
+    "micropico.syncFileTypes": [
+        "py",
+        "raw",
+        "c"
+    ]
+}

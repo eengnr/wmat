@@ -1,0 +1,88 @@
+# Third Party Notes
+
+This project is licensed under the GNU General Public License, Version 3 (see LICENSE). The components listed below retain their own licenses.
+
+## Fonts
+
+### Modified Degree Mono
+File: src/fonts/Modified_Degree_Mono5x9.c
+
+Derived from Liberation Mono.
+Changes: Converted to a binary format; the * glyph was replaced with a ° glyph.
+
+Original copyright notices:
+Digitized data copyright (c) 2010 Google Corporation
+  with Reserved Font Arimo, Tinos and Cousine.
+Copyright (c) 2012 Red Hat, Inc.
+  with Reserved Font Name Liberation.
+
+License: SIL Open Font License 1.1.
+Full license text and copyright notices:
+src/fonts/LICENSE-Liberation-Mono
+
+The modified font is distributed under the SIL Open Font License 1.1.
+Its primary font name is "Modified Degree Mono" and does not use any of the
+Reserved Font Names listed above.
+
+### E1234
+Files: src/fonts/E123414x24.c, src/fonts/E123421x34.c
+
+Derived from E1234 by GGBotNet.
+Changes: Converted to a binary format.
+
+Original copyright notice:
+Copyright © 2020 GGBot, with Reserved Font Name "E1234".
+
+License: SIL Open Font License 1.1.
+Full license text and copyright notices:
+src/fonts/LICENSE-E1234
+
+The converted font is distributed under the SIL Open Font License 1.1.
+
+## Icons
+
+### Material Symbols
+Files: src/icons/material-symbols-light*.raw
+
+Source: https://icon-sets.iconify.design/material-symbols-light/ (Google
+Material Symbols)
+Changes: Converted to a binary format.
+
+License: Apache License 2.0.
+Full license text: src/icons/LICENSE-material-design-icons
+
+### Weather Icons
+Files: src/icons/wi*.raw
+
+Source: https://icon-sets.iconify.design/wi/ (Weather Icons, created and maintained by Erik Flowers.)
+Artwork: v1.0 by Lukas Bischoff; v1.1–2.0 by Erik Flowers.
+Changes: Converted to a binary format.
+
+License: SIL Open Font License 1.1.
+Full license text: src/icons/LICENSE-weather-icons
+
+## Libraries
+
+### micropython-ssd1351
+Files: src/lib/ssd1351/ssd1351.py, src/lib/ssd1351/xglcd_font.py
+
+Source: https://github.com/rdagger/micropython-ssd1351
+Changes: None (vendored as-is).
+
+Original copyright notice:
+Copyright (c) 2017
+
+License: MIT.
+Full license text: src/lib/ssd1351/LICENSE-ssd1351
+
+### umqtt.simple
+Files: src/lib/umqtt/simple.py
+
+Source: https://github.com/micropython/micropython-lib/blob/master/micropython/umqtt.simple/umqtt/simple.py
+Changes: None (vendored as-is).
+
+Original copyright notice:
+Copyright (c) 2013, 2014 micropython-lib contributors
+
+License: MIT.
+Full license text: src/lib/umqtt/LICENSE-simple-py (see the "MIT License" section).

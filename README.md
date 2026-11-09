@@ -41,12 +41,11 @@ On boot, `main.py` looks for `config.json`. If it does not exist, the clock star
 
 Without a `config.json` the Pico starts a WiFi access point and a small web server:
 
-1. Connect to the access point **WMATConfig** with the password **wmat**
-   (IP address `192.168.4.1`).
+1. Connect to the access point **WMATConfig** with the password **wmat1234**.
 2. Open **http://192.168.4.1** in a browser. The landing page shows a form with the sections
-   *WiFi Configuration*, *MQTT Configuration* and *Time Configuration*.
-3. Press **Save and Restart**. The values are written to `config.json` and the device reboots
-   into normal operation.
+   *WiFi*, *MQTT* and *Time*.
+3. Set everything and press **Save and Restart**. The values are written to `config.json` and the
+   device reboots into normal operation.
 
 #### WiFi setup
 
@@ -110,7 +109,7 @@ Alarms are stored in `config.json` under the key `alarms` and are managed via MQ
 Publish a JSON object to `<prefix>/alarm/add`:
 
 ```json
-{"year": 2026, "month": 12, "day": 24, "hour": 8, "minute": 0, "sound": "CalmRise"}
+{"year": 2026, "month": 12, "day": 24, "hour": 8, "minute": 0, "name": "Wake up", "sound": "CalmRise"}
 ```
 
 If an alarm with the same identity already exists, it is **overwritten** instead of duplicated.
@@ -178,7 +177,7 @@ Unknown names or invalid RTTTL fall back to `Default`.
 
 ### Weather data
 
-Weather is pushed to the clock as JSON on `<prefix>/weather` (there is no polling on the device):
+Weather is pushed to the clock as JSON on `<prefix>/weather`:
 
 ```json
 {
